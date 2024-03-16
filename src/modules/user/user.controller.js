@@ -3,8 +3,8 @@ import { tryCatch } from '../../utils/trycatch'
 import * as UserService from './user.service'
 
 const _handleFetchUsers = async (req,res) => {
-    const user = await UserService.fetchUsers()
-    res.status(StatusCodes.OK).json(user)
+    // const user = await UserService.fetchUsers()
+    res.status(200).json('user')
 }
 
 const _handleCreateUser = async(req, res) => {

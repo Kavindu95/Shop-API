@@ -5,5 +5,6 @@ const UserRouter = Router();
 
 UserRouter.post('/register', UserController.handleCreateUser)
 UserRouter.post('/login', UserController.handleLoginUser)
+UserRouter.get('/',UserController.handleFetchUsers)
 
 export default UserRouter
